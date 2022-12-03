@@ -17,3 +17,7 @@ with open('./inputData.txt', 'r') as file:
 totals_list = [sum(list_block) for list_block in data_list]
 sorted_totals = sorted(totals_list, reverse=True)
 print(f"The highest value is: {sorted_totals[0]}")
+
+# Get total of top three highest
+top_three = sorted_totals[:3]
+print(f"The sum of the top three highest values is: {sum(top_three)}")
